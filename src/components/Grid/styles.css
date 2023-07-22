@@ -1,0 +1,49 @@
+.grid {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    gap: 2px;
+
+    @media (max-width: 500px ) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.header {
+    padding: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @media(max-width: 500px) {
+        display: block;
+    }
+}
+
+p {
+    @media (max-width: 500px) {
+        margin-top: 8px;
+    }
+}
+
+button {
+    color: var(--color-text-dark);
+    background-color:  var(--color-btn);
+    border-radius: 8px;
+    padding: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.matches {
+    color: blue;
+}
+
+.moves {
+    color: red;
+}
